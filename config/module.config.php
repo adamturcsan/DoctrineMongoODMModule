@@ -3,6 +3,7 @@ use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ODM\MongoDB\Configuration;
 use DoctrineMongoODMModule\Service\DoctrineObjectHydratorFactory;
 $className = '\\Doctrine\\Common\\Proxy\\AbstractProxyFactory';
+spl_autoload_call($className);
 var_dump(["classLoaded" => class_exists($className)]);
 return [
     'doctrine' => [
