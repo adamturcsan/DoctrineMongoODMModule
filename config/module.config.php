@@ -2,7 +2,7 @@
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ODM\MongoDB\Configuration;
 use DoctrineMongoODMModule\Service\DoctrineObjectHydratorFactory;
-
+var_dump(spl_autoload_functions());
 return [
     'doctrine' => [
         'connection' => [
