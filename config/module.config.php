@@ -2,7 +2,8 @@
 use Doctrine\Common\Proxy\AbstractProxyFactory;
 use Doctrine\ODM\MongoDB\Configuration;
 use DoctrineMongoODMModule\Service\DoctrineObjectHydratorFactory;
-var_dump(spl_autoload_functions(),spl_autoload_call('\\Doctrine\\Common\\Proxy\\AbstractProxyFactory'));
+$className = '\\Doctrine\\Common\\Proxy\\AbstractProxyFactory';
+var_dump(["classLoaded" => class_exists($className)]);
 return [
     'doctrine' => [
         'connection' => [
